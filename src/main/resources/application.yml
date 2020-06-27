@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SycamoreYC/user-service-config
+          username: sungyechun@outlook.com
+          password: dhiovU!qDFuQJzZxE6ifL-DAD
+          search-paths: user-service-config
+server:
+  port: 8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka
